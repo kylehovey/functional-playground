@@ -1,0 +1,8 @@
+{
+  "name": "FunctionalPlayground",
+  "version": "1.0.0",
+  "description": "Playing around with functional paradigms in JS",
+  "main": "index.js",
+  "author": "khoveyc@gmail.com <khoveyc@gmail.com>",
+  "license": "MIT"
+}
