@@ -4,5 +4,10 @@
   "description": "Playing around with functional paradigms in JS",
   "main": "index.js",
   "author": "khoveyc@gmail.com <khoveyc@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "jest": "^23.4.1"
+  }
 }
