@@ -1,6 +1,10 @@
 const MType = Symbol("Maybe");
+const noneTypes = new Map([
+  [ null ],
+  [ undefined ],
+]);
 const isMaybe = x => (x instanceof Object && x.type === MType);
-const isNone = x => x === null || x === undefined;
+const isNone = x => noneTypes.has(x);
 
 const Just = (x, last) => ({
   value : () => x,
