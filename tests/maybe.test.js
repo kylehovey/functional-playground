@@ -55,11 +55,7 @@ describe("Maybe", () => {
 
   it("implements a flat map", () => {
     expect(
-      Maybe(
-        Maybe(
-          nested
-        )
-      )
+      Maybe(nested)
       .then(({ a }) => Maybe(a))
       .then(({ b }) => b)
       .then(({ c }) => Maybe(c))
