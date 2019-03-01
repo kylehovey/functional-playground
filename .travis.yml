@@ -1,0 +1,13 @@
+language: node_js
+cache:
+  directories:
+    - "node_modules"
+install:
+  - git clone https://github.com/kylehovey/functional-playground
+  - cd functional-playground
+  - yarn global add eslint
+  - yarn global add babel-eslint
+  - yarn install
+script:
+  - yarn test
+  - yarn lint
